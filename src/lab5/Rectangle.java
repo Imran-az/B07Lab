@@ -15,6 +15,16 @@ public class Rectangle {
         return A.distance(B) + B.distance(C) + C.distance(D) + D.distance(A);
     }
 
+    public double computeArea(){
+        return A.distance(B) * B.distance(C);
+    }
+
+    public double diagonalLength() {
+        return A.distance(C);   
+    }
+
+
+
     public boolean isEquilateral(){
         double dAB = A.distance(B);
         double dBC = B.distance(C);
