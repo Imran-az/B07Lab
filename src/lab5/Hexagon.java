@@ -25,12 +25,12 @@ public class Hexagon {
     public boolean isNormalHexagon() {
 
 		double sideLength = A.distance(B);
-
-        return sideLength == B.distance(C) &&
-               sideLength == C.distance(D) &&
-               sideLength == D.distance(E) &&
-               sideLength == E.distance(F) &&
-               sideLength == F.distance(A);
+        double t = 0.01;
+        return Math.abs(sideLength - B.distance(C)) < t &&
+           Math.abs(sideLength - C.distance(D)) < t &&
+           Math.abs(sideLength - D.distance(E)) < t &&
+           Math.abs(sideLength - E.distance(F)) < t &&
+           Math.abs(sideLength - F.distance(A)) < t;
     }
     
     
