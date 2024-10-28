@@ -1,5 +1,3 @@
-package lab5;
-
 public class Triangle {
 	Point A;
 	Point B;
@@ -15,7 +13,7 @@ public class Triangle {
 		return A.distance(B) + B.distance(C) + C.distance(A);
 	}
 	
-	public boolean isEquilateral() {
+	public boolean isSquare() {
 		double dAB = A.distance(B);
 		double dBC = B.distance(C);
 		double dCA = C.distance(A);
@@ -24,4 +22,6 @@ public class Triangle {
 		else
 			return false;
 	}
+
+
 }
